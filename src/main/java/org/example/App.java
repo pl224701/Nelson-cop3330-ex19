@@ -13,7 +13,7 @@ public class App
         System.out.print("What is your height in inches and weight in pounds? ");
         int n1=sc.nextInt();
         int n2=sc.nextInt();
-        int bmi = (n2/(n1*n1))*703;
+        int bmi = (n2*703/(n1*n1));
         if(bmi>18.5 && bmi<25)
             System.out.print("You are within the ideal weight range.");
         else if(bmi>25)
